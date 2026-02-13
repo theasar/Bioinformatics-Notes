@@ -1,0 +1,16 @@
+pwd /home/users/tss1045/gen711-811ls
+ls
+clear
+cd shell_data/
+cd shell_data
+ls
+ls -F
+man ls
+ls -lrth
+cd untrimmed_fastq/
+ls
+head SRR097977.untrimmed_fastq
+ls
+cd ../ - step back
+changing back to home directory:
+cd ~
