@@ -61,3 +61,33 @@ Counts the number of files in bin that have c in it
 To use a command from your history do !"number in history"    
 
 "grep" looks through things | grep 'grep'    
+     
+# 2/20/26 - Lab 5  
+#### Warmup     
+Finding the last read in the untrimmed_fastq SRR097977.fastq    
+
+What I got for the last read was:     
+GGGTAGGTATTACTCAGGACGAGGCGGTCGTGCCAC   
++SRR097977.249 209DTAAXX_Lenski2_1_7:8:3:441:292 length=36 
+
+I used tail in order to find the last few reads    
+
+To fo find the size of the file:     
+ls -lh     
+My fastqs are 47K and 43K
+
+#### Exercise 5.1     
+
+I used the command mkdir backup to make a backup directory, then I used cp filename backup/newfilename for each of the fastq files to put the backups into this backup directory
+
+#### Exercise 5.2   
+chmod -w SRR098026-backup.fastq    
+
+Check with ls -l    
+
+#### Exercise 5.3   
+conda activate genomics
+conda deactivate
+fastqc *.fastq
+
+mkdir fastqc_intrimmed_reads
